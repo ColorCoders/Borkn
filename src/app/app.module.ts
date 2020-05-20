@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent
   ],
   imports: [
+    MatSidenavModule,
     MatCardModule,
     MatSliderModule,
     BrowserModule,

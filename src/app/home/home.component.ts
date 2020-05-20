@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatSliderModule } from '@angular/material/slider';
+
 
 @Component({
   selector: 'app-home',
