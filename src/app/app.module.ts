@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatSliderModule } from '@angular/material/slider';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,6 +15,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HomeComponent
   ],
   imports: [
+    MatToolbarModule,
     MatSidenavModule,
     MatCardModule,
     MatSliderModule,
