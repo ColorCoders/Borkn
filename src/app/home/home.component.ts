@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Dog } from '../models/Dog';
 
 
 @Component({
@@ -10,6 +11,9 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(public router:Router) { }
+
+  //For use with ngFor
+  dogs: Dog[];
 
   ngOnInit(): void {
   }
