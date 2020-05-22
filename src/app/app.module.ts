@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent
   ],
   imports: [
+    MatDividerModule,
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,

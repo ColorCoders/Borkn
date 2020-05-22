@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
 
   //Get method for carousel or scrollable list
   showDogs(){
-
+    
   }
 }

@@ -1,12 +1,17 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <mat-toolbar class="topBar">
- 
-    <mat-icon >menu</mat-icon>
+
+  <mat-icon (click)="showMenu()">menu</mat-icon>
 
   <span style="width: 5px;"></span>
   <span>Borkn</span>
+  <span style="width: 95%;"></span>
+  <mat-icon>person</mat-icon>
+  <span style="width: 5px;"></span>
+
+  <mat-icon>settings</mat-icon>
+
 </mat-toolbar>
 <app-home></app-home>
 

@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Borkn';
+
+  //menu action
+  showMenu(){
+    console.log("menu clicked");
+  }
+
+  //for person icon
+  showPerson(){
+
+  }
+
+  //for settings cog
+  showSettings(){
+
+  }
 }
