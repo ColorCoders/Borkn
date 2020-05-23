@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import {SettingsComponent} from '../settings/settings.component';
+import {ProfileComponent} from '../profile/profile.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,9 +10,13 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    
   }
 
   //menu action
@@ -20,12 +26,21 @@ export class ToolbarComponent implements OnInit {
 
   //for person icon
   showPerson(){
-    console.log("person clicked");
 
+    const profilePopup = this.dialog.open(ProfileComponent);
+    
+    profilePopup.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
   //for settings cog
   showSettings(){
-    console.log("settings clicked");
+
+    const settingsDialog = this.dialog.open(SettingsComponent);
+
+    settingsDialog.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
