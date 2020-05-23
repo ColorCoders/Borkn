@@ -14,6 +14,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FormBuilder } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +37,7 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

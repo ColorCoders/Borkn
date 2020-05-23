@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { Dog } from '../models/Dog';
 
@@ -10,7 +11,9 @@ import { Dog } from '../models/Dog';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router:Router, private _formBuilder: FormBuilder) { }
+
+  isLinear = false;
 
   //For use with ngFor
   dogs: Dog[];
