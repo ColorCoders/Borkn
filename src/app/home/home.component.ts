@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { Dog } from '../models/Dog';
-
+import {DogService} from '../services/dog.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ import { Dog } from '../models/Dog';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router:Router, private _formBuilder: FormBuilder) { }
+  constructor(public router:Router, private _formBuilder: FormBuilder, private ds: DogService) { }
 
   isLinear = false;
 
@@ -19,10 +19,11 @@ export class HomeComponent implements OnInit {
   dogs: Dog[];
 
   ngOnInit(): void {
+    this.showDogs();
   }
 
   //Get method for carousel or scrollable list
   showDogs(){
-    
+    this.ds.getDogs();
   }
 }

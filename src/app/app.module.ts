@@ -15,6 +15,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormBuilder } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { FormBuilder } from '@angular/forms';
     ProfileComponent
   ],
   imports: [
+    HttpClientModule,
     MatDialogModule,
     MatDividerModule,
     MatIconModule,
