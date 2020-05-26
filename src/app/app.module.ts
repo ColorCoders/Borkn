@@ -40,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [FormBuilder],
+  providers: [FormBuilder,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
